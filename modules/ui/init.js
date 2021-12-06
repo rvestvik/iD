@@ -431,9 +431,7 @@ export function uiInit(context) {
 
         if (!_initCounter++) {
             if (!ui.hash.startWalkthrough) {
-                context.container()
-                    .call(uiSplash(context))
-                    .call(uiRestore(context));
+                context.history().restore();
             }
 
             context.container()
