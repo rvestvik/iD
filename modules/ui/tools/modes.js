@@ -25,21 +25,21 @@ export function uiToolOldDrawModes(context) {
         modeAddPoint(context, {
             title: t.html('modes.add_point.title'),
             button: 'point',
-            description: t.html('modes.add_point.description'),
+            description: 'Add points of interest',
             preset: presetManager.item('point'),
             key: '1'
         }),
         modeAddLine(context, {
             title: t.html('modes.add_line.title'),
             button: 'line',
-            description: t.html('modes.add_line.description'),
+            description: 'Add roads',
             preset: presetManager.item('line'),
             key: '2'
         }),
         modeAddArea(context, {
             title: t.html('modes.add_area.title'),
             button: 'area',
-            description: t.html('modes.add_area.description'),
+            description: 'Add polygon, dump or stockpile',
             preset: presetManager.item('area'),
             key: '3'
         })
