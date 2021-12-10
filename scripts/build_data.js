@@ -87,6 +87,10 @@ function buildData() {
     minifyJSON('data/qa_data.json', 'dist/data/qa_data.min.json'),
     minifyJSON('data/shortcuts.json', 'dist/data/shortcuts.min.json'),
     minifyJSON('data/territory_languages.json', 'dist/data/territory_languages.min.json'),
+    minifyJSON('data/preset_defaults.json', 'dist/data/preset_defaults.min.json'),
+    minifyJSON('data/presets.json', 'dist/data/presets.min.json'),
+    minifyJSON('data/preset_categories.json', 'dist/data/preset_categories.min.json'),
+
     Promise.all([
       // Fetch the icons that are needed by the expected tagging schema version
       fetch('https://cdn.jsdelivr.net/npm/@openstreetmap/id-tagging-schema@3/dist/presets.min.json'),

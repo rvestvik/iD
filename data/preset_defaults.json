@@ -1,0 +1,26 @@
+{
+    "point": ["point"],
+    "vertex": [
+        "highway/crossing/marked",
+        "highway/crossing/unmarked",
+        "railway/level_crossing",
+        "highway/traffic_signals",
+        "highway/turning_circle",
+        "highway/turning_loop",
+        "traffic_calming",
+        "highway/mini_roundabout",
+        "highway/motorway_junction",
+        "point"
+    ],
+    "relation": [
+        "category-route",
+        "category-restriction",
+        "public_transport/stop_area",
+        "type/boundary",
+        "type/waterway",
+        "type/multipolygon",
+        "type/enforcement",
+        "type/site",
+        "relation"
+    ]
+}
