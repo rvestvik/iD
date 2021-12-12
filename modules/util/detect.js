@@ -102,13 +102,13 @@ export function utilDetect(refresh) {
 
 
   /* Host */
-  const loc = window.top.location;
-  let origin = loc.origin;
-  if (!origin) {  // for unpatched IE11
-    origin = loc.protocol + '//' + loc.hostname + (loc.port ? ':' + loc.port: '');
-  }
+  // const loc = window.top.location;
+  // let origin = loc.origin;
+  // if (!origin) {  // for unpatched IE11
+  //   origin = loc.protocol + '//' + loc.hostname + (loc.port ? ':' + loc.port: '');
+  // }
 
-  _detected.host = origin + loc.pathname;
+  // _detected.host = origin + loc.pathname;
 
 
   return _detected;
