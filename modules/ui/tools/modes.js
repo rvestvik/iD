@@ -39,7 +39,7 @@ export function uiToolOldDrawModes(context) {
         modeAddArea(context, {
             title: t.html('modes.add_area.title'),
             button: 'area',
-            description: 'Add polygon, dump or stockpile',
+            description: 'Add polygon, dump, stockpile or depot',
             preset: presetManager.item('area'),
             key: '3'
         })

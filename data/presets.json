@@ -1,4 +1,67 @@
 {
+    "mine/polygon": {
+        "icon": "maki-marker-stroked",
+        "fields": ["name"],
+        "moreFields": [],
+        "geometry": ["area"],
+        "tags": {}
+    },
+    "mine/stockpile": {
+        "icon": "maki-marker-stroked",
+        "fields": ["name"],
+        "moreFields": [],
+        "geometry": ["area"],
+        "tags": {}
+    },
+    "mine/depot": {
+        "icon": "maki-marker-stroked",
+        "fields": ["name"],
+        "moreFields": [],
+        "geometry": ["area"],
+        "tags": {}
+    },
+    "mine/dump": {
+        "icon": "maki-marker-stroked",
+        "fields": ["name"],
+        "moreFields": [],
+        "geometry": ["area"],
+        "tags": {}
+    },
+    "mine/shovel": {
+        "icon": "maki-marker-stroked",
+        "fields": ["name"],
+        "moreFields": [],
+        "geometry": ["point"],
+        "tags": {}
+    },
+    "mine/charging_equipment": {
+        "icon": "maki-marker-stroked",
+        "fields": ["name"],
+        "moreFields": [],
+        "geometry": ["point"],
+        "tags": {}
+    },
+    "mine/crusher": {
+        "icon": "maki-marker-stroked",
+        "fields": ["name"],
+        "moreFields": [],
+        "geometry": ["point"],
+        "tags": {}
+    },
+    "mine/drill_rig": {
+        "icon": "maki-marker-stroked",
+        "fields": ["name"],
+        "moreFields": [],
+        "geometry": ["point"],
+        "tags": {}
+    },
+    "mine/loader": {
+        "icon": "maki-marker-stroked",
+        "fields": ["name"],
+        "moreFields": [],
+        "geometry": ["point"],
+        "tags": {}
+    },
     "aerialway": {
         "fields": ["name", "aerialway"],
         "moreFields": ["layer"],

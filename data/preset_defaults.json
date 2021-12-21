@@ -1,5 +1,13 @@
 {
-    "point": ["point"],
+    "area": ["mine/polygon", "mine/dump", "mine/stockpile", "mine/depot"],
+    "line": ["highway/service"],
+    "point": [
+        "mine/shovel",
+        "mine/charging_equipment",
+        "mine/crusher",
+        "mine/drill_rig",
+        "mine/loader"
+    ],
     "vertex": [
         "highway/crossing/marked",
         "highway/crossing/unmarked",

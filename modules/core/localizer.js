@@ -87,6 +87,7 @@ export function coreLocalizer() {
             'locales'     // load the list of supported locales
         ];
 
+        // her blir oversettelse gjort
         const localeDirs = {
             general: 'locales',
             tagging: 'https://cdn.jsdelivr.net/npm/@openstreetmap/id-tagging-schema@3/dist/translations'
@@ -324,7 +325,9 @@ export function coreLocalizer() {
 
         if (replacements && 'default' in replacements) {
           // Fallback to a default value if one is specified in `replacements`
+          console.log("test3:"+replacements.default);
           return {
+
               text: replacements.default,
               locale: null
           };
@@ -354,6 +357,26 @@ export function coreLocalizer() {
      *             method `t.append`.
      */
     localizer.t.html = function(stringId, replacements, locale) {
+
+      if (stringId == "_tagging.presets.presets.mine/polygon.name")
+        return "Polygon";
+      if (stringId == "_tagging.presets.presets.mine/dump.name")
+        return "Dump";
+      if (stringId == "_tagging.presets.presets.mine/stockpile.name")
+        return "Stockpile";
+        if (stringId == "_tagging.presets.presets.mine/depot.name")
+        return "Depot";
+      if (stringId == "_tagging.presets.presets.mine/shovel.name")
+        return "Shovel";
+        if (stringId == "_tagging.presets.presets.mine/charging_equipment.name")
+        return "Charging Equipment";
+        if (stringId == "_tagging.presets.presets.mine/crusher.name")
+        return "Crusher";
+        if (stringId == "_tagging.presets.presets.mine/drill_rig.name")
+        return "Drill Rig";
+        if (stringId == "_tagging.presets.presets.mine/loader.name")
+        return "Loader";
+
       // replacement string might be html unsafe, so we need to escape it except if it is explicitly marked as html code
       replacements = Object.assign({}, replacements);
       for (var k in replacements) {
@@ -366,6 +389,8 @@ export function coreLocalizer() {
       }
 
       const info = localizer.tInfo(stringId, replacements, locale);
+
+
       // text may be empty or undefined if `replacements.default` is
       if (info.text) {
         return `<span class="localized-text" lang="${info.locale || 'und'}">${info.text}</span>`;
@@ -377,8 +402,10 @@ export function coreLocalizer() {
     // Adds localized text wrapped as an HTML span element with locale info to the DOM
     localizer.t.append = function(stringId, replacements, locale) {
       return function(selection) {
+
         const info = localizer.tInfo(stringId, replacements, locale);
-        return selection.append('span')
+
+                return selection.append('span')
             .attr('class', 'localized-text')
             .attr('lang', info.locale || 'und')
             .text((replacements && replacements.prefix || '')
